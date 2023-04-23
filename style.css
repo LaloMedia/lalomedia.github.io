@@ -237,7 +237,7 @@ header{
 /*  --------MAIL-------- */
 .mail-container{
     width: 100%;
-    height: calc(100vh - 128px);
+    height: 82vh;
     background-color: rgb(0, 102, 255);
     display: flex;
     align-items: center;
