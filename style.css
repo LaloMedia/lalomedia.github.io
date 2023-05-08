@@ -4,7 +4,6 @@
     --white:  #fff;
     --lightred: #f9433dcc;
     --main: #002fff;
-    --main-gradient: linear-gradient(23deg, rgba(0,47,255,1) 0%, rgba(0,123,255,1) 100%);
 }
 
 
@@ -21,7 +20,7 @@
 /* ---------WEB STYLES--------- */
 @media (pointer: fine){
     #cursor{
-        background-color: var(--brightred);
+        background-color: var(--main);
         width:400px;
         height:400px;
         border-radius: 50%;
@@ -42,11 +41,6 @@
     background: var(--main);
 }
 
-
-
-
-/* ---------SCROLLBAR--------- */
-
 ::-webkit-scrollbar{
     width: 10px;
 }
@@ -56,6 +50,8 @@
 ::-webkit-scrollbar-thumb{
     background-color: var(--main);
 }
+
+
 
 /* ---------NAVBAR--------- */
 nav{
@@ -169,7 +165,7 @@ nav{
 
 /* GALERIE */
 #galerie{
-    padding-top: 1070px;
+    /* padding-top: 1070px; */    /* POUR LES SIDES */
     width: 90vw;
     margin: 0 auto;
 }
@@ -284,90 +280,13 @@ nav{
 }
 
 
-/* -------LOADER------- */
-/* .loader-container{
-    position: relative;
-}
-#loader {
-    position: absolute;
-    z-index: 100;
-    object-fit: cover;
-    animation-duration: 3s;
-    animation-name: loading;
-    animation-iteration-count : 1;
-    overflow-y: hidden;
-  }
-  @keyframes  loading{
-    0% {
-      width: 100vw;
-      position: absolute;
-    }
-    65% {
-      width: 100vw;
-      position: absolute;
-    }
-    100% {
-      width: 100%;
-      position: absolute;
-    }
-  } */ 
-
-
-
-/* .loader-container{
-    position: relative;
-    width: 100%;
-    height: 100%; 
-    display: flex;  
-    align-items: center;
-    justify-content: center;
-}
-#loader {
-    position: absolute;
-    z-index: 100;
-    object-fit: cover;
-    animation: loading 6s ease-in-out;
-    animation-iteration-count : 1;
-  }
-  @keyframes  loading{
-    0% {
-      width: 100vw;
-      height: 100%;
-      position: absolute;
-      z-index: 1000;  
-    }
-    75% {
-      width: 100vw;
-      height: 100%;
-      position: absolute;
-      z-index: 1000;  
-    }
-    85% {
-      width: 120vw;
-      height: 100%;
-      z-index: 1000;  
-    }
-    100% {
-      width: 100%;
-      height: 100%;
-      z-index: 1000;  
-    }
-  } 
- */
-
-
-
-
-
-
-
 
 
 /*  --------MAIL-------- */
 .mail-container{
     width: 100%;
     height: 75vh;
-    /* background-color: var(--main); */
+    /* background-color: var(--(--main-gradient)); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -415,21 +334,6 @@ form button{
 
 
 /*  --------SHOOTING-------- */
-
-/* .shooting-container{
-    background-color: palegoldenrod;
-    width: 90vw;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.shooting-card{
-    background-color: red;
-    width: 400px;
-    height: 500px;
-} */
 
 .card{
     display: flex;
