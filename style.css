@@ -283,11 +283,91 @@ nav{
     }
 }
 
+
+/* -------LOADER------- */
+/* .loader-container{
+    position: relative;
+}
+#loader {
+    position: absolute;
+    z-index: 100;
+    object-fit: cover;
+    animation-duration: 3s;
+    animation-name: loading;
+    animation-iteration-count : 1;
+    overflow-y: hidden;
+  }
+  @keyframes  loading{
+    0% {
+      width: 100vw;
+      position: absolute;
+    }
+    65% {
+      width: 100vw;
+      position: absolute;
+    }
+    100% {
+      width: 100%;
+      position: absolute;
+    }
+  } */ 
+
+
+
+/* .loader-container{
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+#loader {
+    position: absolute;
+    z-index: 100;
+    object-fit: cover;
+    animation: loading 6s ease-in-out;
+    animation-iteration-count : 1;
+  }
+  @keyframes  loading{
+    0% {
+      width: 100vw;
+      height: 100%;
+      position: absolute;
+      z-index: 1000;  
+    }
+    75% {
+      width: 100vw;
+      height: 100%;
+      position: absolute;
+      z-index: 1000;  
+    }
+    85% {
+      width: 120vw;
+      height: 100%;
+      z-index: 1000;  
+    }
+    100% {
+      width: 100%;
+      height: 100%;
+      z-index: 1000;  
+    }
+  } 
+ */
+
+
+
+
+
+
+
+
+
 /*  --------MAIL-------- */
 .mail-container{
     width: 100%;
-    height: 82vh;
-    background-color: rgb(0, 102, 255);
+    height: 75vh;
+    /* background-color: var(--main); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -301,6 +381,7 @@ form{
     width: 90%;
     max-width: 600px;
     border-radius: 10px;
+    box-shadow: 0 20px 24px hsla(235, 32%, 15%, .2);
 }
 
 form h3{
@@ -319,7 +400,7 @@ form input, form textarea{
 }
 form button{
     padding: 1em;
-    background-color: var(--brightred);
+    background-color: var(--main);
     color: white;
     font-size: 18px;
     border: 0;
@@ -327,4 +408,115 @@ form button{
     cursor: pointer;
     border-radius: 10px;
     margin: 10px 0 0;
+}
+
+
+
+
+
+/*  --------SHOOTING-------- */
+
+/* .shooting-container{
+    background-color: palegoldenrod;
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.shooting-card{
+    background-color: red;
+    width: 400px;
+    height: 500px;
+} */
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-color: palegreen; */
+    margin: 0 24px;
+}
+.card-container{
+    margin: 1.5rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 500px;
+}
+.card-article{
+    position: relative;
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 20px 24px hsla(235, 32%, 15%, .2);
+    overflow: hidden;
+    transition: transform 250ms ease;
+}
+.card-data{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.card-img{
+    width: 100%;
+    margin-bottom: 1.5rem;
+    align-self: center;
+    border-radius: .5rem;
+}
+.card-title{
+    color: black;
+    font-size: 2rem;
+    font-weight: 900;
+}
+.card-desc{
+    font-weight: 400;
+}
+.card a{
+    width: 100%;
+    /* background: #002fff; */
+    background: linear-gradient(23deg, rgba(0,47,255,1) 0%, rgba(0,123,255,1) 100%);
+    padding: 1rem 0;
+    color: white;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: background-color 250ms ease;
+}
+
+.card .prix{
+    color: #002fff;
+    font-size: smaller;
+}
+
+
+
+/* --------ABOUT-------- */
+
+.about-container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-img{
+    aspect-ratio: 4/5;
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+.about-img img{
+    max-width: 80%;
+    height: auto;
+}
+.about-content{
+    flex: 1;
 }
