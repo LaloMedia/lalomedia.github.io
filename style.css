@@ -3,6 +3,8 @@
     --brightred: #ff3300;
     --white:  #fff;
     --lightred: #f9433dcc;
+    --main: #002fff;
+    --main-gradient: linear-gradient(23deg, rgba(0,47,255,1) 0%, rgba(0,123,255,1) 100%);
 }
 
 
@@ -13,9 +15,10 @@
     font-family: 'Satoshi', sans-serif;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
-/* ---------CURSOR--------- */
+/* ---------WEB STYLES--------- */
 @media (pointer: fine){
     #cursor{
         background-color: var(--brightred);
@@ -23,14 +26,21 @@
         height:400px;
         border-radius: 50%;
         filter: blur(150px);
-        position: absolute;
+        position: fixed;
         z-index: -10000;
         overflow: hidden;
         transform: translate(-50%, -50%);
+        transition: all 150ms ease-out;
     }
 }
-
-
+::selection {
+    color: white;
+    background: var(--main);
+  }
+::-moz-selection { /* Pour Firefox */
+    color: white;
+    background: var(--main);
+}
 
 
 
@@ -44,7 +54,7 @@
     background-color: #dadada;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: #ff3300;
+    background-color: var(--main);
 }
 
 /* ---------NAVBAR--------- */
